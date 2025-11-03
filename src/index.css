@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.5);
+  }
+}
+
+.animate-glow {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+
+/* === Animated Star Background === */
+.stars, .stars2, .stars3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  top: 0;
+  left: 0;
+  animation: moveStars 100s linear infinite;
+}
+
+.stars {
+  background-image: radial-gradient(2px 2px at 20px 20px, white, transparent),
+                    radial-gradient(2px 2px at 50px 100px, white, transparent),
+                    radial-gradient(2px 2px at 130px 40px, white, transparent);
+  background-size: 200px 200px;
+}
+
+.stars2 {
+  background-image: radial-gradient(1px 1px at 10px 10px, #88f, transparent),
+                    radial-gradient(1px 1px at 60px 80px, #88f, transparent),
+                    radial-gradient(1px 1px at 120px 30px, #88f, transparent);
+  background-size: 300px 300px;
+  animation-duration: 150s;
+}
+
+.stars3 {
+  background-image: radial-gradient(1px 1px at 30px 30px, #0ff, transparent),
+                    radial-gradient(1px 1px at 70px 70px, #0ff, transparent),
+                    radial-gradient(1px 1px at 110px 50px, #0ff, transparent);
+  background-size: 400px 400px;
+  animation-duration: 200s;
+  opacity: 0.6;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(180px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(180px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(120px) rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
+
+
+
+/* Shooting stars */
+@keyframes shooting {
+  0% { transform: translate(0,0) rotate(-45deg); opacity: 1; }
+  100% { transform: translate(500px,500px) rotate(-45deg); opacity: 0; }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(45deg, white, transparent);
+  opacity: 0;
+  border-radius: 50%;
+  animation: shooting 1.2s ease-in-out infinite;
+}
+
+/* Planet orbit animations */
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.planet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.orbit-1 { animation: orbit1 10s linear infinite; top:50%; left:50%; transform-origin: center; }
+.orbit-2 { animation: orbit2 15s linear infinite; top:50%; left:50%; transform-origin: center; }
+.orbit-3 { animation: orbit3 20s linear infinite; top:50%; left:50%; transform-origin: center; }
+
+@keyframes orbit1 { 0% { transform: rotate(0deg) translateX(80px) rotate(0deg);} 100% { transform: rotate(360deg) translateX(80px) rotate(-360deg);} }
+@keyframes orbit2 { 0% { transform: rotate(0deg) translateX(120px) rotate(0deg);} 100% { transform: rotate(360deg) translateX(120px) rotate(-360deg);} }
+@keyframes orbit3 { 0% { transform: rotate(0deg) translateX(160px) rotate(0deg);} 100% { transform: rotate(360deg) translateX(160px) rotate(-360deg);} }
+
+
+
+/* in index.css or globals.css */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+
+
+
+@keyframes floatTech {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(15deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-floatTech {
+  animation: floatTech 6s ease-in-out infinite;
+}
+
