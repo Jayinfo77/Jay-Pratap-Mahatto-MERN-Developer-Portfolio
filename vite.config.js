@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-     tailwindcss(),
-    react()
+    tailwindcss(),
+    react(),
   ],
+  base: '/Jay-Pratap-Mahatto-MERN-Developer-Portfolio/', // ✅ Correct placement
 })

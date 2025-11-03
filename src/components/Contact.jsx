@@ -3,12 +3,25 @@ import React from "react";
 import { FaEnvelope, FaLinkedin, FaCodeBranch } from "react-icons/fa";
 
 export default function Contact() {
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    // Try to open Gmail compose
+    const gmailUrl =
+      "https://mail.google.com/mail/?view=cm&fs=1&to=jayinfo55@gmail.com";
+    const newWindow = window.open(gmailUrl, "_blank");
+
+    // If Gmail couldn't open, fallback to default email app
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
+      window.location.href = "mailto:jayinfo55@gmail.com";
+    }
+  };
+
   return (
     <section
       id="contact"
       className="relative px-4 sm:px-8 md:px-16 lg:px-24 py-20 sm:py-24 lg:py-28 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden"
     >
-      {/* ✨ Animated background glow */}
+      {/* ✨ Animated gradient background */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_30%,rgba(34,211,238,0.15),transparent_70%),radial-gradient(circle_at_80%_70%,rgba(168,85,247,0.15),transparent_70%)]"></div>
 
       <div className="max-w-6xl mx-auto text-center">
@@ -30,11 +43,11 @@ export default function Contact() {
 
         {/* 📧 Buttons */}
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-16">
-          {/* ✅ Opens Gmail directly */}
+          {/* Smart Email Button (Gmail + fallback) */}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=jayinfo55@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:jayinfo55@gmail.com"
+            onClick={handleEmailClick}
+            rel="noreferrer"
             className="flex items-center justify-center gap-2 sm:gap-3 px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-cyan-500/30 hover:scale-105 text-sm sm:text-base md:text-lg font-semibold"
           >
             <FaEnvelope className="text-base sm:text-lg md:text-xl" />
@@ -45,7 +58,7 @@ export default function Contact() {
           <a
             href="https://www.linkedin.com/in/jay-pratap-mahatto-246808384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="flex items-center justify-center gap-2 sm:gap-3 px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-purple-500/30 hover:scale-105 text-sm sm:text-base md:text-lg font-semibold"
           >
             <FaLinkedin className="text-base sm:text-lg md:text-xl" />
@@ -56,7 +69,7 @@ export default function Contact() {
           <a
             href="https://github.com/Jayinfo77"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="flex items-center justify-center gap-2 sm:gap-3 px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 rounded-full border border-gray-600 hover:border-cyan-500 hover:text-cyan-400 transition-all duration-300 hover:scale-105 text-sm sm:text-base md:text-lg font-semibold"
           >
             <FaCodeBranch className="text-base sm:text-lg md:text-xl" />
