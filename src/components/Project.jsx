@@ -35,7 +35,7 @@ const projects = [
       "A full MERN stack system for managing books, users, and library transactions with a clean and responsive interface.",
     tech: ["React", "Vite", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     image: libraryImg,
-    github: "https://github.com/Jayinfo77/Library-Management-System",
+    github: "https://github.com/Jayinfo77/Library-Management-System.git",
     live: "https://github.com/Jayinfo77/Library-Management-System",
   },
 ];
