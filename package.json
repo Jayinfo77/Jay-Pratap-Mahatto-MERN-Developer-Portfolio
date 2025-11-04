@@ -1,12 +1,10 @@
 {
   "name": "frontend",
-  "homepage": "https://Jayinfo77.github.io/Jay-Pratap-Mahatto-MERN-Developer-Portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+   
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

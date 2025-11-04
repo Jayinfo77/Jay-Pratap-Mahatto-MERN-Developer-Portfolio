@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: '/Jay-Pratap-Mahatto-MERN-Developer-Portfolio/', // ✅ Correct placement
+  
 })

@@ -36,7 +36,7 @@ const projects = [
     tech: ["React", "Vite", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     image: libraryImg,
     github: "https://github.com/Jayinfo77/Library-Management-System.git",
-    live: "https://github.com/Jayinfo77/Library-Management-System",
+    live: "https://jayinfo77.github.io/Library-Management-System-Frontend/",
   },
 ];
 
