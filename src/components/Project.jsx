@@ -27,7 +27,7 @@ const projects = [
     tech: ["React", "Vite", "TailwindCSS", "Node.js", "Express", "MongoDB", "Python", "DeepLearning"],
     image: damageImg,
     github: "https://github.com/Jayinfo77/powered-vehicle-damage-estimator-website.git",
-    live: "https://github.com/Jayinfo77/Powered-Vehicles-Damaged-Estimator",
+    live: "https://jayinfo77.github.io/powered-vehicle-damage-estimator-frontend/",
   },
   {
     title: "Library Management System",
