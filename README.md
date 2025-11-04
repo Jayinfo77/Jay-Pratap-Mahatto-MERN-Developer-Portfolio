@@ -1,16 +1,93 @@
-# React + Vite
+Jay Pratap Mahatto – MERN Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This website showcases my skills, projects, and contact information. It is built with React, Vite, TailwindCSS, and deployed on GitHub Pages.
 
-Currently, two official plugins are available:
+🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fully responsive design for mobile, tablet, and desktop
 
-## React Compiler
+Interactive UI with animated components and gradient effects
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Contact section with email, LinkedIn, GitHub, and X/Twitter links
 
-## Expanding the ESLint configuration
+Skills & Projects sections highlight expertise in MERN stack development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Optimized build using Vite for fast performance
+
+🛠 Tech Stack
+
+Frontend: React.js, Vite, TailwindCSS
+
+Icons & Animations: react-icons, framer-motion
+
+Version Control: Git & GitHub
+
+Deployment: GitHub Pages
+
+📁 Folder Structure
+frontend/
+├─ public/
+├─ src/
+│  ├─ assets/      # Images & icons
+│  ├─ components/  # Reusable React components
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ package.json
+├─ vite.config.js
+└─ tailwind.config.js
+
+🚀 Live Demo
+
+Check out the live portfolio:
+👉 https://Jayinfo77.github.io/powered-vehicle-damage-estimator-website/
+
+💻 Getting Started (Local Setup)
+
+Clone the repository:
+
+git clone https://github.com/Jayinfo77/Jay-Pratap-Mahatto-MERN-Developer-Portfolio.git
+cd Jay-Pratap-Mahatto-MERN-Developer-Portfolio/frontend
+
+
+Install dependencies:
+
+npm install
+
+
+Start development server:
+
+npm run dev
+
+
+Build for production:
+
+npm run build
+
+
+Deploy to GitHub Pages:
+
+npm run deploy
+
+📬 Contact
+
+You can reach me via:
+
+Email: jayinfo55@gmail.com
+
+LinkedIn: Jay Pratap Mahatto
+
+GitHub: Jayinfo77
+
+X/Twitter: @MrJay3049
+
+⚡ Tips
+
+The project uses Vite, so hot-reloading works instantly during development.
+
+TailwindCSS utilities handle responsive styling.
+
+The gh-pages branch is used for GitHub Pages deployment.
+
+📜 License
+
+This project is open source under the MIT License.
