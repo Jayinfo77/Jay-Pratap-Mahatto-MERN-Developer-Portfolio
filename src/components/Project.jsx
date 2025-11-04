@@ -26,7 +26,7 @@ const projects = [
       "Deep learning model using CNNs and regression to automatically estimate vehicle damage costs with high accuracy.",
     tech: ["React", "Vite", "TailwindCSS", "Node.js", "Express", "MongoDB", "Python", "DeepLearning"],
     image: damageImg,
-    github: "https://github.com/Jayinfo77/Powered-Vehicles-Damaged-Estimator",
+    github: "https://github.com/Jayinfo77/powered-vehicle-damage-estimator-website.git",
     live: "https://github.com/Jayinfo77/Powered-Vehicles-Damaged-Estimator",
   },
   {
